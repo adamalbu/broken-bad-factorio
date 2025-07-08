@@ -21,5 +21,14 @@ data.extend({
         subgroup = "raw-material",
         order = "a[salt]",
         stack_size = 100,
+    },
+
+    {
+        type = "item",
+        name = "advanced-organic-catalyst",
+        icon = "__broken-bad__/graphics/icons/advanced-organic-catalyst.png", -- TODO: Make proper icon
+        subgroup = "intermediate-product",
+        order = "b[advanced-organic-catalyst]",
+        stack_size = 50,
     }
 })

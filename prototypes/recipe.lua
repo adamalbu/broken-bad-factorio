@@ -15,6 +15,7 @@ data:extend({
         subgroup = "production-machine",
         order = "e[evaporator]",
     },
+
     {
         type = "recipe",
         name = "iodine",
@@ -30,6 +31,7 @@ data:extend({
         subgroup = "fluid-recipes",
         order = "a[fluid]-b[iodine]",
     },
+
     {
         type = "recipe",
         name = "brine",
@@ -45,6 +47,7 @@ data:extend({
         subgroup = "fluid-recipes",
         order = "a[fluid]-c[brine]",
     },
+
     {
         type = "recipe",
         name = "salt",
@@ -57,5 +60,41 @@ data:extend({
         results = {
             { type = "item", name = "salt", amount = 5 },
         },
+    },
+
+    {
+        type = "recipe",
+        name = "pseudoephedrine",
+        category = "chemistry", -- TODO: Replace with advanced chemicstry
+        enabled = true,
+        energy_required = 12,
+        ingredients = {
+            { type = "fluid", name = "sulfuric-acid", amount = 50 },
+            { type = "fluid", name = "water", amount = 100 },
+            { type = "item", name = "wood", amount = 20 },
+            { type = "item", name = "advanced-organic-catalyst", amount = 1 },
+        },
+        results = { { type = "fluid", name = "pseudoephedrine", amount = 20 } },
+        icon = "__broken-bad__/graphics/icons/fluid/pseudoephedrine.png",
+        subgroup = "fluid-recipes",
+        order = "a[fluid]-d[pseudoephedrine]",
+    },
+
+    {
+        type = "recipe",
+        name = "advanced-organic-catalyst",
+        category = "chemistry",
+        enabled = true,
+        energy_required = 10,
+        ingredients = {
+            { type = "item", name = "iron-plate", amount = 2 },
+            { type = "item", name = "electronic-circuit", amount = 5 },
+            { type = "fluid", name = "petroleum-gas", amount = 25 },
+            { type = "fluid", name = "heavy-oil", amount = 20 },
+        },
+        results = { { type = "item", name = "advanced-organic-catalyst", amount = 1 } },
+        icon = "__broken-bad__/graphics/icons/advanced-organic-catalyst.png",
+        subgroup = "intermediate-product",
+        order = "b[advanced-organic-catalyst]",
     }
 })

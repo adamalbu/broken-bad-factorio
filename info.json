@@ -1,0 +1,9 @@
+{
+  "name": "broken-bad",
+  "version": "0.0.1",
+  "title": "Broken Bad",
+  "author": "You",
+  "factorio_version": "2.0",
+  "dependencies": ["base >= 2.0"],
+  "description": "funny chemistry"
+}
